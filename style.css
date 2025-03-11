@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
+@media screen and (max-width: 768px) {
+}
+
+:root {
+  --black: #000000;
+  --grey: #3b3b3b;
+  --purple: #711b88;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: "exo", sans-serif;
+}
+
+header {
+  background-color: var(--purple);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+header > h1{
+  text-align: center;
+}
+
+header > img{
+border: solid 2px white;
+border-radius: 100%;
+padding: .5rem;
+background-color: var(--black);
+width: 8rem;
+height: 8rem;
+}
+
+nav {
+  background-color: var(--grey);
+  max-height: 10%;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: .5rem;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+h2{
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.banner_slide{
+  position: relative;
+  margin: 0 auto;
+  width: 14rem;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.banner_wrapped {
+  display: flex;
+}
+.banner_slide > div > img{
+object-fit: contain;
+width: 15rem;
+height: 9rem;
+}
+
+.logo_team{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.logo_team > img {
+  gap:10px;/*to change*/
+  width: 50vw;
+  height:30vh;
+  border-radius: 100%;
+}
+
+
+.about > p {
+color: white;
+}
+
+button{
+  display: flex;
+  justify-content: center;
+}
+
+footer{
+  text-align: center;
+  background-color: var(--purple);
+  color: white;
+}
